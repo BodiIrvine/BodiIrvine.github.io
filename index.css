@@ -99,42 +99,6 @@ blockquote {
     color: #e0e0e0; /* Light grey text */
 }
 
-/* Social Media Section Styles */
-#social-media .social-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-#social-media .social-item {
-    text-align: center;
-    padding: 15px;
-    background-color: #444444; /* Slightly lighter grey */
-    border-radius: 5px;
-    margin: 10px;
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
-}
-
-#social-media .social-item a {
-    color: #007bff; /* Blue links */
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#social-media .social-item a:hover {
-    color: #0056b3; /* Darker blue on hover */
-}
-
-#social-media .social-item p {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #e0e0e0; /* Light grey text */
-}
-
 /* Contact Form Styles */
 form {
     display: flex;
@@ -202,15 +166,5 @@ footer .social-links a:hover {
     #skills ul {
         flex-direction: column; /* Stacks skills vertically */
         align-items: center;
-    }
-
-    #social-media .social-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #social-media .social-item {
-        max-width: 100%;
-        margin: 10px 0;
     }
 }
