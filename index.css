@@ -154,17 +154,33 @@ footer .social-links a:hover {
 /* Media Queries: Makes the site responsive */
 @media (max-width: 768px) {
     nav ul li {
-        display: block; /* Stacks nav items vertically */
-        margin: 10px 0;
+        display: block; /* Already stacking vertically */
+        margin: 15px 0; /* Increase vertical spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 20px; /* Larger font size for readability */
+        padding: 10px 15px; /* Add padding to increase tappable area */
+        display: block; /* Ensures the link takes up the full width */
     }
 
     section {
         margin: 10px;
-        padding: 20px; /* Reduced padding on smaller screens */
+        padding: 20px; /* Already present, keeping it as is */
     }
 
     #skills ul {
-        flex-direction: column; /* Stacks skills vertically */
+        flex-direction: column;
         align-items: center;
+    }
+
+    #social-media .social-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #social-media .social-item {
+        max-width: 100%;
+        margin: 10px 0;
     }
 }
