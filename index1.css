@@ -1,0 +1,170 @@
+/* General Styles: Applies to the entire website */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light grey text */
+    line-height: 1.6;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #000000; /* Black header */
+    padding: 20px 0;
+    position: sticky; /* Keeps header at the top while scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures header stays above other content */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #e0e0e0; /* Light grey logo text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light grey links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #bbbbbb; /* Lighter grey on hover */
+}
+
+/* Section Styles: Applies to all sections */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Limits content width */
+    background-color: #333333; /* Dark grey background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+h1, h2 {
+    color: #ffffff; /* White headers */
+}
+
+/* Projects and Blog Styles */
+.project, article {
+    margin-bottom: 20px; /* Spacing between items */
+}
+
+.project a, article a {
+    color: #007bff; /* Blue links */
+    text-decoration: none;
+}
+
+.project a:hover, article a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Skills List Styles */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wraps skills on smaller screens */
+    justify-content: center;
+}
+
+#skills ul li {
+    background-color: #555555; /* Medium grey background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Testimonials Styles */
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #007bff; /* Blue accent line */
+    padding-left: 10px;
+    margin: 10px 0;
+    color: #e0e0e0; /* Light grey text */
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stacks form elements vertically */
+}
+
+form label {
+    margin-top: 10px;
+    color: #ffffff; /* White labels */
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555555; /* Medium grey border */
+    border-radius: 5px;
+    background-color: #444444; /* Dark grey background */
+    color: #e0e0e0; /* Light grey text */
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Black footer */
+    color: #e0e0e0; /* Light grey text */
+}
+
+footer .social-links a {
+    color: #007bff; /* Blue links */
+    text-decoration: none;
+    margin: 0 10px; /* Spacing between links */
+}
+
+footer .social-links a:hover {
+    color: #bbbbbb; /* Light grey on hover */
+}
+
+/* Media Queries: Makes the site responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stacks nav items vertically */
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    #skills ul {
+        flex-direction: column; /* Stacks skills vertically */
+        align-items: center;
+    }
+}
